@@ -10,10 +10,24 @@ $env['prod']['usr'] = 'root';
 $env['prod']['pwd'] = 'Bismillah3x!.';
 //dev
 $env['dev']['server'] = 'localhost';
-// $env['dev']['db'] = 'smarkor';
-$env['dev']['db'] = 'sm_dev_teguh';
+$env['dev']['db'] = 'smarkor';
 $env['dev']['usr'] = 'root';
 $env['dev']['pwd'] = '';
+
+// $production = false;
+
+// function connect($prod=false){
+// //prod
+// $env['prod']['server'] = 'localhost';
+// $env['prod']['db'] = 'sm';
+// $env['prod']['usr'] = 'root';
+// $env['prod']['pwd'] = 'Bismillah3x!.';
+// //dev
+// $env['dev']['server'] = 'localhost';
+// // $env['dev']['db'] = 'smarkor';
+// $env['dev']['db'] = 'sm_dev_teguh';
+// $env['dev']['usr'] = 'root';
+// $env['dev']['pwd'] = '';
 
 $db=$prod?$env['prod']:$env['dev'];
 
